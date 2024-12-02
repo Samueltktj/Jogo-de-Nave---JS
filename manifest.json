@@ -1,0 +1,34 @@
+{
+	"name": "Navinha v1 - SI202™",
+	"version": "0.0.1",
+	"description": "Shoot 'em up in a Chrome Extension",
+	"author": "R04 SI202 Group",
+	"permissions": ["storage", "tabs"],
+	
+	"icons": { 
+		"16": "./icones_extensao/icon16.png",
+		"32": "./icones_extensao/icon32.png",
+		"48": "./icones_extensao/icon48.png",
+		"128": "./icones_extensao/icon128.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches":["<all_urls>"],
+			"js":["content.js"]
+		}
+	],
+
+	"action": {
+		"default_icon": { 
+			"16": "./icones_extensao/icon16.png",
+			"32": "./icones_extensao/icon32.png",
+			"48": "./icones_extensao/icon48.png",
+			"128": "./icones_extensao/icon128.png"
+		},		
+		"default_popup": "index.html",
+		"default_title": "Lets goo"
+	},
+
+	"manifest_version": 3
+}
